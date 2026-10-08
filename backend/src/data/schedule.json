@@ -1,0 +1,79 @@
+[
+  {
+    "id": "s1",
+    "machine": "VM-RPA-01",
+    "day": 0,
+    "start": 24,
+    "dur": 8,
+    "robot": "R001",
+    "process": "Emissão NF-e",
+    "timeout": 60,
+    "scheduleType": "DAILY"
+  },
+  {
+    "id": "s2",
+    "machine": "VM-RPA-01",
+    "day": 0,
+    "start": 28,
+    "dur": 6,
+    "robot": "R013",
+    "process": "Relatório Gerencial",
+    "timeout": 45,
+    "scheduleType": "WEEKLY"
+  },
+  {
+    "id": "s3",
+    "machine": "VM-RPA-01",
+    "day": 1,
+    "start": 32,
+    "dur": 10,
+    "robot": "R003",
+    "process": "Conciliação Bancária",
+    "timeout": 90,
+    "scheduleType": "WEEKLY"
+  },
+  {
+    "id": "s4",
+    "machine": "VM-RPA-01",
+    "day": 2,
+    "start": 68,
+    "dur": 6,
+    "robot": "R007",
+    "process": "Apuração de Impostos",
+    "timeout": 60,
+    "scheduleType": "DAILY"
+  },
+  {
+    "id": "s5",
+    "machine": "VM-RPA-01",
+    "day": 4,
+    "start": 20,
+    "dur": 12,
+    "robot": "R009",
+    "process": "Fechamento Contábil",
+    "timeout": 120,
+    "scheduleType": "WEEKLY"
+  },
+  {
+    "id": "s6",
+    "machine": "VM-RPA-02",
+    "day": 0,
+    "start": 36,
+    "dur": 8,
+    "robot": "R002",
+    "process": "Baixa de Títulos",
+    "timeout": 60,
+    "scheduleType": "DAILY"
+  },
+  {
+    "id": "s7",
+    "machine": "VM-RPA-02",
+    "day": 3,
+    "start": 40,
+    "dur": 14,
+    "robot": "R011",
+    "process": "Folha de Pagamento",
+    "timeout": 120,
+    "scheduleType": "WEEKLY"
+  }
+]

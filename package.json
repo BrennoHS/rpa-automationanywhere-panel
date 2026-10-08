@@ -1,0 +1,16 @@
+{
+  "name": "rpa-operations-center",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Painel corporativo para monitoramento, documentacao e gestao de robos RPA (Automation Anywhere).",
+  "scripts": {
+    "install:all": "npm --prefix frontend install && npm --prefix backend install",
+    "dev": "concurrently -n frontend,backend -c cyan,magenta \"npm --prefix frontend run dev\" \"npm --prefix backend run dev\"",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "dev:backend": "npm --prefix backend run dev",
+    "build": "npm --prefix frontend run build && npm --prefix backend run build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

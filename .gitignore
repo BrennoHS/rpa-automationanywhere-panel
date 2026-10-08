@@ -1,0 +1,19 @@
+node_modules/
+dist/
+build/
+*.local
+.env
+.DS_Store
+*.log
+data.sqlite
+backend/scripts/fetch_control_room_samples_local.py
+backend/scripts/test_swagger_get.py
+backend/scripts/samples/
+
+# Config local do launch do preview (Browser pane) - especifica da maquina/editor.
+.claude/
+
+# Notas internas de sessao/trabalho (contexto especifico do ambiente real,
+# nao faz parte do projeto generico que vai pro repositorio publico).
+CONTEXTO-SESSAO.md
+*.tsbuildinfo

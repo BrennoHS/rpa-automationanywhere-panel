@@ -1,0 +1,742 @@
+[
+  {
+    "id": "R001",
+    "name": "Emissão NF-e",
+    "area": "Fiscal",
+    "environment": "Produção",
+    "machine": "VM-RPA-01",
+    "developer": "Marina Alves",
+    "status": "Ativo",
+    "fails": 0,
+    "runs": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "avg": 4.2,
+    "lastExec": "hoje 06:00",
+    "nextExec": "hoje 12:15",
+    "lastError": "—",
+    "execToday": 4,
+    "tickets": 0,
+    "slaTarget": 95,
+    "sla": 100,
+    "minT": 2.5,
+    "maxT": 8,
+    "apis": [
+      "SAP"
+    ],
+    "systems": [
+      "SAP ECC"
+    ],
+    "pendencies": [
+      {
+        "id": "p-0-1",
+        "text": "Comportamento validado com a área de negócio.",
+        "tag": "Info",
+        "prio": "Baixa",
+        "done": true
+      }
+    ]
+  },
+  {
+    "id": "R002",
+    "name": "Baixa de Títulos",
+    "area": "Financeiro",
+    "environment": "Produção",
+    "machine": "VM-RPA-02",
+    "developer": "Rafael Souza",
+    "status": "Ativo",
+    "fails": 1,
+    "runs": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "avg": 7.8,
+    "lastExec": "hoje 07:07",
+    "nextExec": "hoje 13:15",
+    "lastError": "ElementNotFound: botão 'Confirmar' ausente",
+    "execToday": 7,
+    "tickets": 0,
+    "slaTarget": 95,
+    "sla": 97,
+    "minT": 4.7,
+    "maxT": 14.8,
+    "apis": [
+      "SAP",
+      "ServiceNow"
+    ],
+    "systems": [
+      "SAP ECC",
+      "Outlook"
+    ],
+    "pendencies": [
+      {
+        "id": "p-1-1",
+        "text": "Comportamento validado com a área de negócio.",
+        "tag": "Info",
+        "prio": "Baixa",
+        "done": true
+      }
+    ]
+  },
+  {
+    "id": "R003",
+    "name": "Conciliação Bancária",
+    "area": "Financeiro",
+    "environment": "Produção",
+    "machine": "VM-RPA-01",
+    "developer": "Camila Reis",
+    "status": "Ativo",
+    "fails": 2,
+    "runs": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "avg": 12.5,
+    "lastExec": "hoje 08:14",
+    "nextExec": "hoje 14:15",
+    "lastError": "HTTP 503: API ServiceNow indisponível",
+    "execToday": 10,
+    "tickets": 0,
+    "slaTarget": 95,
+    "sla": 94,
+    "minT": 7.5,
+    "maxT": 23.8,
+    "apis": [
+      "SAP",
+      "ServiceNow",
+      "SharePoint"
+    ],
+    "systems": [
+      "SAP ECC",
+      "Outlook",
+      "Portal Fiscal"
+    ],
+    "pendencies": [
+      {
+        "id": "p-2-1",
+        "text": "Comportamento validado com a área de negócio.",
+        "tag": "Info",
+        "prio": "Baixa",
+        "done": true
+      }
+    ]
+  },
+  {
+    "id": "R004",
+    "name": "Admissão de Colaborador",
+    "area": "RH",
+    "environment": "Produção",
+    "machine": "VM-RPA-03",
+    "developer": "Bruno Lima",
+    "status": "Ativo",
+    "fails": 3,
+    "runs": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "avg": 3.1,
+    "lastExec": "hoje 09:21",
+    "nextExec": "hoje 15:15",
+    "lastError": "AuthenticationError: sessão SAP expirada",
+    "execToday": 13,
+    "tickets": 0,
+    "slaTarget": 95,
+    "sla": 91,
+    "minT": 1.9,
+    "maxT": 5.9,
+    "apis": [
+      "SAP"
+    ],
+    "systems": [
+      "SAP ECC"
+    ],
+    "pendencies": [
+      {
+        "id": "p-3-1",
+        "text": "Comportamento validado com a área de negócio.",
+        "tag": "Info",
+        "prio": "Baixa",
+        "done": true
+      }
+    ]
+  },
+  {
+    "id": "R005",
+    "name": "Roteirização de Entregas",
+    "area": "Logística",
+    "environment": "Produção",
+    "machine": "VM-RPA-02",
+    "developer": "Letícia Nunes",
+    "status": "Erro",
+    "fails": 5,
+    "runs": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "avg": 9.4,
+    "lastExec": "hoje 10:28",
+    "nextExec": "hoje 16:15",
+    "lastError": "FileNotFoundException: layout de retorno ausente",
+    "execToday": 16,
+    "tickets": 2,
+    "slaTarget": 95,
+    "sla": 85,
+    "minT": 5.6,
+    "maxT": 17.9,
+    "apis": [
+      "SAP",
+      "ServiceNow"
+    ],
+    "systems": [
+      "SAP ECC",
+      "Outlook"
+    ],
+    "pendencies": [
+      {
+        "id": "p-4-1",
+        "text": "API SAP apresenta timeout entre 17h e 18h.",
+        "tag": "SAP",
+        "prio": "Alta",
+        "done": false
+      },
+      {
+        "id": "p-4-2",
+        "text": "Aguardando atualização da API pela equipe de integração.",
+        "tag": "Bloqueio",
+        "prio": "Média",
+        "done": false
+      }
+    ]
+  },
+  {
+    "id": "R006",
+    "name": "Pedido de Compra SAP",
+    "area": "Compras",
+    "environment": "Produção",
+    "machine": "VM-RPA-04",
+    "developer": "Marina Alves",
+    "status": "Ativo",
+    "fails": 4,
+    "runs": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "avg": 6.7,
+    "lastExec": "hoje 11:35",
+    "nextExec": "hoje 17:15",
+    "lastError": "TimeoutException: SAP GUI não respondeu em 60s",
+    "execToday": 19,
+    "tickets": 0,
+    "slaTarget": 95,
+    "sla": 88,
+    "minT": 4,
+    "maxT": 12.7,
+    "apis": [
+      "SAP",
+      "ServiceNow",
+      "SharePoint"
+    ],
+    "systems": [
+      "SAP ECC",
+      "Outlook",
+      "Portal Fiscal"
+    ],
+    "pendencies": [
+      {
+        "id": "p-5-1",
+        "text": "API SAP apresenta timeout entre 17h e 18h.",
+        "tag": "SAP",
+        "prio": "Alta",
+        "done": false
+      },
+      {
+        "id": "p-5-2",
+        "text": "Aguardando atualização da API pela equipe de integração.",
+        "tag": "Bloqueio",
+        "prio": "Média",
+        "done": false
+      }
+    ]
+  },
+  {
+    "id": "R007",
+    "name": "Apuração de Impostos",
+    "area": "Contábil",
+    "environment": "Produção",
+    "machine": "VM-RPA-01",
+    "developer": "Rafael Souza",
+    "status": "Erro",
+    "fails": 7,
+    "runs": [
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "avg": 15.2,
+    "lastExec": "hoje 12:42",
+    "nextExec": "hoje 18:15",
+    "lastError": "ElementNotFound: botão 'Confirmar' ausente",
+    "execToday": 22,
+    "tickets": 3,
+    "slaTarget": 95,
+    "sla": 79,
+    "minT": 9.1,
+    "maxT": 28.9,
+    "apis": [
+      "SAP"
+    ],
+    "systems": [
+      "SAP ECC"
+    ],
+    "pendencies": [
+      {
+        "id": "p-6-1",
+        "text": "API SAP apresenta timeout entre 17h e 18h.",
+        "tag": "SAP",
+        "prio": "Alta",
+        "done": false
+      },
+      {
+        "id": "p-6-2",
+        "text": "Aguardando atualização da API pela equipe de integração.",
+        "tag": "Bloqueio",
+        "prio": "Média",
+        "done": false
+      }
+    ]
+  },
+  {
+    "id": "R008",
+    "name": "Atualização Cadastral",
+    "area": "Atendimento",
+    "environment": "Homologação",
+    "machine": "VM-RPA-03",
+    "developer": "Camila Reis",
+    "status": "Erro",
+    "fails": 8,
+    "runs": [
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "avg": 2.4,
+    "lastExec": "hoje 13:49",
+    "nextExec": "hoje 19:15",
+    "lastError": "HTTP 503: API ServiceNow indisponível",
+    "execToday": 25,
+    "tickets": 3,
+    "slaTarget": 95,
+    "sla": 76,
+    "minT": 1.4,
+    "maxT": 4.6,
+    "apis": [
+      "SAP",
+      "ServiceNow"
+    ],
+    "systems": [
+      "SAP ECC",
+      "Outlook"
+    ],
+    "pendencies": [
+      {
+        "id": "p-7-1",
+        "text": "API SAP apresenta timeout entre 17h e 18h.",
+        "tag": "SAP",
+        "prio": "Alta",
+        "done": false
+      },
+      {
+        "id": "p-7-2",
+        "text": "Aguardando atualização da API pela equipe de integração.",
+        "tag": "Bloqueio",
+        "prio": "Média",
+        "done": false
+      }
+    ]
+  },
+  {
+    "id": "R009",
+    "name": "Fechamento Contábil",
+    "area": "Contábil",
+    "environment": "Produção",
+    "machine": "VM-RPA-02",
+    "developer": "Bruno Lima",
+    "status": "Erro",
+    "fails": 9,
+    "runs": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "avg": 22,
+    "lastExec": "hoje 14:56",
+    "nextExec": "hoje 20:15",
+    "lastError": "AuthenticationError: sessão SAP expirada",
+    "execToday": 6,
+    "tickets": 3,
+    "slaTarget": 95,
+    "sla": 73,
+    "minT": 13.2,
+    "maxT": 41.8,
+    "apis": [
+      "SAP",
+      "ServiceNow",
+      "SharePoint"
+    ],
+    "systems": [
+      "SAP ECC",
+      "Outlook",
+      "Portal Fiscal"
+    ],
+    "pendencies": [
+      {
+        "id": "p-8-1",
+        "text": "API SAP apresenta timeout entre 17h e 18h.",
+        "tag": "SAP",
+        "prio": "Alta",
+        "done": false
+      },
+      {
+        "id": "p-8-2",
+        "text": "Aguardando atualização da API pela equipe de integração.",
+        "tag": "Bloqueio",
+        "prio": "Média",
+        "done": false
+      }
+    ]
+  },
+  {
+    "id": "R010",
+    "name": "Integração ServiceNow",
+    "area": "Atendimento",
+    "environment": "Produção",
+    "machine": "VM-RPA-04",
+    "developer": "Letícia Nunes",
+    "status": "Erro",
+    "fails": 10,
+    "runs": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "avg": 5.5,
+    "lastExec": "hoje 15:03",
+    "nextExec": "hoje 21:15",
+    "lastError": "FileNotFoundException: layout de retorno ausente",
+    "execToday": 9,
+    "tickets": 4,
+    "slaTarget": 95,
+    "sla": 70,
+    "minT": 3.3,
+    "maxT": 10.4,
+    "apis": [
+      "SAP"
+    ],
+    "systems": [
+      "SAP ECC"
+    ],
+    "pendencies": [
+      {
+        "id": "p-9-1",
+        "text": "API SAP apresenta timeout entre 17h e 18h.",
+        "tag": "SAP",
+        "prio": "Alta",
+        "done": false
+      },
+      {
+        "id": "p-9-2",
+        "text": "Aguardando atualização da API pela equipe de integração.",
+        "tag": "Bloqueio",
+        "prio": "Média",
+        "done": false
+      }
+    ]
+  },
+  {
+    "id": "R011",
+    "name": "Folha de Pagamento",
+    "area": "RH",
+    "environment": "Produção",
+    "machine": "VM-RPA-02",
+    "developer": "Marina Alves",
+    "status": "Ativo",
+    "fails": 2,
+    "runs": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "avg": 18.3,
+    "lastExec": "hoje 16:10",
+    "nextExec": "hoje 12:15",
+    "lastError": "TimeoutException: SAP GUI não respondeu em 60s",
+    "execToday": 12,
+    "tickets": 0,
+    "slaTarget": 95,
+    "sla": 94,
+    "minT": 11,
+    "maxT": 34.8,
+    "apis": [
+      "SAP",
+      "ServiceNow"
+    ],
+    "systems": [
+      "SAP ECC",
+      "Outlook"
+    ],
+    "pendencies": [
+      {
+        "id": "p-10-1",
+        "text": "Comportamento validado com a área de negócio.",
+        "tag": "Info",
+        "prio": "Baixa",
+        "done": true
+      }
+    ]
+  },
+  {
+    "id": "R012",
+    "name": "Sincronização Estoque",
+    "area": "Logística",
+    "environment": "Homologação",
+    "machine": "VM-RPA-01",
+    "developer": "Rafael Souza",
+    "status": "Pausado",
+    "fails": 6,
+    "runs": [
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "avg": 8.1,
+    "lastExec": "hoje 17:17",
+    "nextExec": "hoje 13:15",
+    "lastError": "ElementNotFound: botão 'Confirmar' ausente",
+    "execToday": 15,
+    "tickets": 2,
+    "slaTarget": 95,
+    "sla": 82,
+    "minT": 4.9,
+    "maxT": 15.4,
+    "apis": [
+      "SAP",
+      "ServiceNow",
+      "SharePoint"
+    ],
+    "systems": [
+      "SAP ECC",
+      "Outlook",
+      "Portal Fiscal"
+    ],
+    "pendencies": [
+      {
+        "id": "p-11-1",
+        "text": "API SAP apresenta timeout entre 17h e 18h.",
+        "tag": "SAP",
+        "prio": "Alta",
+        "done": false
+      },
+      {
+        "id": "p-11-2",
+        "text": "Aguardando atualização da API pela equipe de integração.",
+        "tag": "Bloqueio",
+        "prio": "Média",
+        "done": false
+      }
+    ]
+  },
+  {
+    "id": "R013",
+    "name": "Relatório Gerencial",
+    "area": "Financeiro",
+    "environment": "Produção",
+    "machine": "VM-RPA-03",
+    "developer": "Camila Reis",
+    "status": "Ativo",
+    "fails": 1,
+    "runs": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "avg": 4.9,
+    "lastExec": "hoje 06:24",
+    "nextExec": "hoje 14:15",
+    "lastError": "HTTP 503: API ServiceNow indisponível",
+    "execToday": 18,
+    "tickets": 0,
+    "slaTarget": 95,
+    "sla": 97,
+    "minT": 2.9,
+    "maxT": 9.3,
+    "apis": [
+      "SAP"
+    ],
+    "systems": [
+      "SAP ECC"
+    ],
+    "pendencies": [
+      {
+        "id": "p-12-1",
+        "text": "Comportamento validado com a área de negócio.",
+        "tag": "Info",
+        "prio": "Baixa",
+        "done": true
+      }
+    ]
+  },
+  {
+    "id": "R014",
+    "name": "Cobrança Automática",
+    "area": "Financeiro",
+    "environment": "Produção",
+    "machine": "VM-RPA-04",
+    "developer": "Bruno Lima",
+    "status": "Pausado",
+    "fails": 4,
+    "runs": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "avg": 6,
+    "lastExec": "hoje 07:31",
+    "nextExec": "hoje 15:15",
+    "lastError": "AuthenticationError: sessão SAP expirada",
+    "execToday": 21,
+    "tickets": 0,
+    "slaTarget": 95,
+    "sla": 88,
+    "minT": 3.6,
+    "maxT": 11.4,
+    "apis": [
+      "SAP",
+      "ServiceNow"
+    ],
+    "systems": [
+      "SAP ECC",
+      "Outlook"
+    ],
+    "pendencies": [
+      {
+        "id": "p-13-1",
+        "text": "API SAP apresenta timeout entre 17h e 18h.",
+        "tag": "SAP",
+        "prio": "Alta",
+        "done": false
+      },
+      {
+        "id": "p-13-2",
+        "text": "Aguardando atualização da API pela equipe de integração.",
+        "tag": "Bloqueio",
+        "prio": "Média",
+        "done": false
+      }
+    ]
+  }
+]
